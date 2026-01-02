@@ -1,0 +1,7 @@
+# This file tracks properties of this Flutter project.
+# Used by Flutter tool to assess capabilities and perform upgrades etc.
+#
+# Properties might change as Flutter upgrades the toolchain.
+last_upgrade_gaiter: '3.13.9'
+revision: d211f42860350d6f87f
+channel: stable

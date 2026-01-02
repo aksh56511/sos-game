@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A two-player SOS game built with Flutter.">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="sos_game">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+    <title>SOS Game</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="splash/style.css">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta name="theme-color" content="#000000">
+    <script>
+        window.addEventListener('load', function(ev) {
+            initializeFlutterWeb();
+        });
+    </script>
+    <script src="flutter.js" defer></script>
+    <style>
+        html, body, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        strong { font-weight: bold; }
+        em { font-style: italic; }
+        table { border-collapse: collapse; border-spacing: 0; }
+        ol, ul { list-style: none; }
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        canvas { display: block; }
+        qt { display: none; }
+    </style>
+    <script>
+        window.flutterWebRenderer = "html";
+        window.flutterConfiguration = {
+            entryPointUrl: "main.dart.js",
+            engine: "dartdevc",
+        };
+        function initializeFlutterWeb() {
+            _flutter.loader.loadEntrypoint({
+                onEntrypointLoaded: async function(engineInitializer) {
+                    let appRunner = await engineInitializer.initializeEngine();
+                    await appRunner.runApp();
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
