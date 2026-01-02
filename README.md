@@ -2,6 +2,12 @@
 
 A Flutter web-based implementation of the classic SOS game where players compete to create SOS patterns on a grid.
 
+## 🎮 Play Now
+
+**[Play the Game Online](https://aksh56511.github.io/sos-game/)** 
+
+Or download and run locally (see instructions below).
+
 ## Features
 
 - **Multiple Game Modes**
